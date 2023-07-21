@@ -16,10 +16,10 @@ module.exports = {
           lessOptions: {
             modifyVars: {
               '@primary-color': '#41af50',
-              '@layout-sider-menu-container': '#F4F5FA',
-              '@component-background': '#F4F5FA',
-              '@layout-header-background': '#F4F5FA',
-              '@layout-body-background': '#F4F5FA',
+              '@layout-sider-menu-container': '#ECE8FD',
+              '@component-background': '#FFFFFF',
+              '@layout-header-background': '#ECE8FD',
+              '@layout-body-background': '#ECE8FD',
             },
             javascriptEnabled: true,
           },
