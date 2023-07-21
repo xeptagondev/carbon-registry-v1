@@ -4,6 +4,58 @@ body {
   background-color: $background-color;
   font-family: $primary-font-family;
   font-weight: 400;
+
+  .ant-tooltip-inner {
+    border-radius: 5px !important;
+    background-color: $primary-color !important;
+  }
+
+  .ant-tooltip-arrow-content {
+    --antd-arrow-background-color: linear-gradient(to right bottom, #41af50, #41af50) !important;
+  }
+
+  .login-language-selection-container .ant-select-selector {
+    color: $primary-color !important;
+    border: 1px solid $primary-color !important;
+  }
+
+  .login-language-selection-container .ant-select-selection-item {
+    color: $primary-color !important;
+  }
+
+  .PhoneInput {
+    .PhoneInputInput:focus-visible,
+    .PhoneInputInput:hover {
+      flex: 1 1;
+      min-width: 0;
+      border-radius: 5px !important;
+      height: 40px;
+      border: 1px solid rgba($primary-color, 0.8) !important;
+      outline: none;
+    }
+  }
+
+  .content-container .body-title {
+    color: $primary-color;
+  }
+
+  .layout-content-container .ant-btn-primary {
+    background-color: $primary-color;
+  }
+
+  .popup-success .ant-btn-primary {
+    background: $primary-color;
+    border-radius: $primary-color;
+    border: none;
+  }
+
+  .login-language-selection-container .ant-select .ant-select-arrow {
+    color: $primary-color;
+  }
+
+  .programme-view .company-info .ant-progress-bg {
+    background-color: $primary-color !important;
+  }
 }
 
 .ant-menu {
@@ -51,11 +103,11 @@ body {
 
 .ant-tooltip-inner {
   border-radius: 5px !important;
-  background-color: #16b1ff !important;
+  background-color: #41af50 !important;
 }
 
 .ant-tooltip-arrow-content {
-  --antd-arrow-background-color: linear-gradient(to right bottom, #16b1ff, #16b1ff) !important;
+  --antd-arrow-background-color: linear-gradient(to right bottom, #41af50, #41af50) !important;
 }
 
 .ant-radio-group {
@@ -278,7 +330,7 @@ body {
   }
 
   .anticon-edit {
-    color: #16b1ff;
+    color: #41af50;
   }
 
   .anticon-delete {

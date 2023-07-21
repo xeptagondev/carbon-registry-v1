@@ -55,14 +55,14 @@ const ProgrammeRejectAndTransfer: FC<ProgrammeRejectAndTransferCardItemProps> = 
               <div className="value">{totalPrgrammes}</div>
             </div>
             <div className="icon">
-              <Clipboard2Pulse color="#16B1FF" size={80} />
+              <Clipboard2Pulse color="#41af50" size={80} />
             </div>
           </div>
           <div className="total-programme-extra-details">
             <div className="rejected-details margin-top-1">
               <div className="icon">
                 <div className="icon-container authorized">
-                  <HandThumbsUp color="#16B1FF" size={25} />
+                  <HandThumbsUp color="#41af50" size={25} />
                 </div>
               </div>
               <div className="details">

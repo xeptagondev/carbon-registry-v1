@@ -26,7 +26,6 @@ const Login: FC<LoginPageProps> = (props: LoginPageProps) => {
   const { i18n, t } = useTranslation(['common', 'login']);
   const [loading, setLoading] = useState<boolean>(false);
   const [showError, setShowError] = useState<boolean>(false);
-  const [errorMsg, setErrorMsg] = useState<string>();
   const navigate = useNavigate();
   const ability = useContext(AbilityContext);
   const { state } = useLocation();
@@ -39,7 +38,6 @@ const Login: FC<LoginPageProps> = (props: LoginPageProps) => {
     const redirectLocation = state?.from?.pathname + state?.from?.search;
     setLoading(true);
     setShowError(false);
-    setErrorMsg(undefined);
     try {
       const email = values.email.trim();
       const response = await post('national/auth/login', {
@@ -75,7 +73,6 @@ const Login: FC<LoginPageProps> = (props: LoginPageProps) => {
       }
     } catch (error: any) {
       console.log('Error in Login', error);
-      setErrorMsg(error?.message);
       setShowError(true);
     } finally {
       setLoading(false);
@@ -99,10 +96,10 @@ const Login: FC<LoginPageProps> = (props: LoginPageProps) => {
           <Col md={24} lg={15} flex="auto">
             <div className="login-img-container container-image">
               <div className="text-ctn">
-                <span>
-                  {t('login:carbon')} <br /> {t('login:credit')} <br />
-                  {t('login:management')}
-                </span>
+                <div>
+                  {t('login:kiuda')} {t('login:group')}
+                </div>
+                <div className="sub">{t('login:sub')}</div>
               </div>
             </div>
           </Col>
@@ -122,12 +119,12 @@ const Login: FC<LoginPageProps> = (props: LoginPageProps) => {
                     </div>
                     <div className="login-country-name">
                       <div className="title">
-                        {'CARBON'}
-                        <span className="title-sub">{'REGISTRY'}</span>
+                        {'KIUDA'}
+                        <span className="title-sub">{'HOLDINGS LTD'}</span>
                       </div>
 
                       <span className="country-name">
-                        {process.env.REACT_APP_COUNTRY_NAME || 'CountryX'}
+                        {process.env.COUNTRY_NAME || 'South Korea'}
                       </span>
                     </div>
                   </Col>
@@ -214,7 +211,7 @@ const Login: FC<LoginPageProps> = (props: LoginPageProps) => {
                               }}
                             />
                             <span className="ant-form-item-explain-error">
-                              {errorMsg ? errorMsg : t('common:loginFailed')}
+                              Invalid login credentials
                             </span>
                           </div>
                         )}

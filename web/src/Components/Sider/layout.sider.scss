@@ -10,9 +10,10 @@
   }
 
   .country-name {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     color: $logo-text-color;
-    margin-top: -5px;
+    margin-top: -6px;
+    margin-left: 1.2rem;
     font-family: 'MuseoSans';
   }
 
@@ -51,21 +52,22 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      padding: 0rem 2rem 0 1rem;
+      padding: 0rem 0 0 1rem;
       cursor: pointer;
 
       .title {
         font-family: 'MuseoSans';
-        font-size: 1.2rem;
+        font-size: 0.7rem;
         color: $logo-text-color;
         font-weight: 700;
-        margin-right: 0.5rem;
+        margin-right: 0.2rem;
+        margin-left: 1.2rem;
       }
 
       .title-sub {
         font-weight: 100 !important;
         font-family: 'MuseoSans';
-        font-size: 1.2rem;
+        font-size: 0.7rem;
         color: $logo-text-color;
       }
 
@@ -76,8 +78,8 @@
         img {
           object-fit: cover;
           height: auto;
-          height: 78%;
-          margin-top: 6px;
+          height: 65%;
+          margin-top: 10px;
           margin-right: 5px;
         }
       }
@@ -96,6 +98,10 @@
 
     .ant-menu-item::after {
       border: none;
+    }
+
+    .ant-menu-item:hover {
+      color: $primary-color;
     }
 
     .ant-menu-submenu-selected {
