@@ -2,6 +2,7 @@ import { Suspense, useEffect } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { ConnectionContextProvider } from './Context/ConnectionContext/connectionContext';
 import 'antd/dist/antd.css';
+import './Styles/theme.less';
 import './Styles/app.scss';
 import Login from './Pages/Login/login';
 import { UserInformationContextProvider } from './Context/UserInformationContext/userInformationContext';
@@ -61,7 +62,7 @@ const App = () => {
         serverURL={
           process.env.REACT_APP_BACKEND
             ? process.env.REACT_APP_BACKEND
-            : 'http://localhost:3000/local'
+            : 'https://ck5kt5uaw1.execute-api.us-east-1.amazonaws.com/dev'
         }
       >
         <UserInformationContextProvider>
@@ -77,7 +78,7 @@ const App = () => {
                 <Route path="codeconduct" element={<CodeOfConduct />} />
                 <Route path="cookie" element={<CookiePolicy />} />
                 <Route path="terms" element={<TermsOfUse />} />
-                <Route path="/" element={<Homepage />} />
+                <Route path="/" element={<Login />} />
                 <Route path="/" element={<PrivateRoute />}>
                   <Route path="/dashboard" element={<CustomLayout selectedKey="dashboard" />}>
                     <Route index element={<Dashboard />} />
