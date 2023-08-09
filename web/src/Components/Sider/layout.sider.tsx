@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, Layout, MenuProps } from 'antd';
-import sliderLogo from '../../Assets/Images/logo-slider.png';
+import sliderLogo from '../../Assets/Images/x-carbon-logo.png';
 import { Link, useNavigate } from 'react-router-dom';
 import './layout.sider.scss';
 import * as Icon from 'react-bootstrap-icons';
@@ -76,10 +76,10 @@ const LayoutSider = (props: LayoutSiderProps) => {
           {!collapsed && (
             <div>
               <div style={{ display: 'flex' }}>
-                <div className="title">{collapsed ? '' : 'KIUDA'}</div>
-                <div className="title-sub">{collapsed ? '' : 'HOLDINGS LTD'}</div>
+                <div className="title">{collapsed ? '' : 'CountryX'}</div>
+                {/* <div className="title-sub">{collapsed ? '' : 'Ltd'}</div> */}
               </div>
-              <div className="country-name">{process.env.COUNTRY_NAME || 'South Korea'}</div>
+              {/* <div className="country-name">{process.env.COUNTRY_NAME || 'CountryX'}</div> */}
             </div>
           )}
           {collapsed && (

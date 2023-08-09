@@ -2,7 +2,7 @@ import { Button, Col, Form, Input, message, Row, Select, Spin } from 'antd';
 import React, { FC, Suspense, useContext, useEffect, useState } from 'react';
 import { useConnection } from '../../Context/ConnectionContext/connectionContext';
 import './login.scss';
-import countryLogo from '../../Assets/Images/logo-slider.png';
+import countryLogo from '../../Assets/Images/x-carbon-logo.png';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import { useUserContext } from '../../Context/UserInformationContext/userInformationContext';
@@ -97,7 +97,7 @@ const Login: FC<LoginPageProps> = (props: LoginPageProps) => {
             <div className="login-img-container container-image">
               <div className="text-ctn">
                 <div>
-                  {t('login:kiuda')} {t('login:group')}
+                  {t('login:company')} {t('login:group')}
                 </div>
                 <div className="sub">{t('login:sub')}</div>
               </div>
@@ -119,13 +119,11 @@ const Login: FC<LoginPageProps> = (props: LoginPageProps) => {
                     </div>
                     <div className="login-country-name">
                       <div className="title">
-                        {'KIUDA'}
-                        <span className="title-sub">{'HOLDINGS LTD'}</span>
+                        {'CountryX'}
+                        {/* <span className="title-sub">{'Ltd'}</span> */}
                       </div>
 
-                      <span className="country-name">
-                        {process.env.COUNTRY_NAME || 'South Korea'}
-                      </span>
+                      {/* <span className="country-name">{process.env.COUNTRY_NAME || 'CountryX'}</span> */}
                     </div>
                   </Col>
                 </Row>

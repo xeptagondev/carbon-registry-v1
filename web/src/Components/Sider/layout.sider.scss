@@ -10,7 +10,7 @@
   }
 
   .country-name {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: $logo-text-color;
     margin-top: -6px;
     margin-left: 1.2rem;
@@ -57,17 +57,18 @@
 
       .title {
         font-family: 'MuseoSans';
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         color: $logo-text-color;
         font-weight: 700;
         margin-right: 0.2rem;
         margin-left: 1.2rem;
+        margin-top: 0.9rem;
       }
 
       .title-sub {
         font-weight: 100 !important;
         font-family: 'MuseoSans';
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         color: $logo-text-color;
       }
 
