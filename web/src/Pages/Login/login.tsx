@@ -2,7 +2,7 @@ import { Button, Col, Form, Input, message, Row, Select, Spin } from 'antd';
 import React, { FC, Suspense, useContext, useEffect, useState } from 'react';
 import { useConnection } from '../../Context/ConnectionContext/connectionContext';
 import './login.scss';
-import countryLogo from '../../Assets/Images/x-carbon-logo.png';
+import countryLogo from '../../Assets/Images/logo-slider.png';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import { useUserContext } from '../../Context/UserInformationContext/userInformationContext';
@@ -119,11 +119,13 @@ const Login: FC<LoginPageProps> = (props: LoginPageProps) => {
                     </div>
                     <div className="login-country-name">
                       <div className="title">
-                        {'CountryX'}
-                        {/* <span className="title-sub">{'Ltd'}</span> */}
+                        {'Holdings'}
+                        <span className="title-sub">{'Ltd'}</span>
                       </div>
 
-                      {/* <span className="country-name">{process.env.COUNTRY_NAME || 'CountryX'}</span> */}
+                      <span className="country-name">
+                        {process.env.COUNTRY_NAME || 'South Korea'}
+                      </span>
                     </div>
                   </Col>
                 </Row>
