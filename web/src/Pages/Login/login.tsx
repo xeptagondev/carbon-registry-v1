@@ -118,10 +118,7 @@ const Login: FC<LoginPageProps> = (props: LoginPageProps) => {
                       />
                     </div>
                     <div className="login-country-name">
-                      <div className="title">
-                        {'XEPTAGON'}
-                      </div>
-
+                      <div className="title">{'XEPTAGON'}</div>
                       <span className="country-name">
                         {process.env.COUNTRY_NAME || 'Hong Kong'}
                       </span>
