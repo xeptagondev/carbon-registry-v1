@@ -76,10 +76,9 @@ const LayoutSider = (props: LayoutSiderProps) => {
           {!collapsed && (
             <div>
               <div style={{ display: 'flex' }}>
-                <div className="title">{collapsed ? '' : 'HOLDINGS'}</div>
-                <div className="title-sub">{collapsed ? '' : 'LTD'}</div>
+                <div className="title">{collapsed ? '' : 'XEPTAGON'}</div>
               </div>
-              <div className="country-name">{process.env.COUNTRY_NAME || 'South Korea'}</div>
+              <div className="country-name">{process.env.COUNTRY_NAME || 'Hong Kong'}</div>
             </div>
           )}
           {collapsed && (
