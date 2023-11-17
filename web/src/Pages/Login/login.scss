@@ -134,8 +134,8 @@
     img {
       margin-top: 20px;
       margin-right: 7px;
-      object-fit: cover;
-      height: auto;
+      object-fit: contain;
+      height: 6rem;
       width: 10rem;
     }
   }
