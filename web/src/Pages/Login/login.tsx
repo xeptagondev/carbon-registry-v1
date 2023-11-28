@@ -97,9 +97,10 @@ const Login: FC<LoginPageProps> = (props: LoginPageProps) => {
             <div className="login-img-container container-image">
               <div className="text-ctn">
                 <div>
-                  {t('login:company')} {t('login:group')}
+                  {process.env.REACT_APP_COMPANY || t('login:company')}
+                  {process.env.REACT_APP_GROUP || t('login:group')}
                 </div>
-                <div className="sub">{t('login:sub')}</div>
+                <div className="sub">{process.env.REACT_APP_SYSTEM_NAME || t('login:sub')}</div>
               </div>
             </div>
           </Col>
@@ -110,7 +111,7 @@ const Login: FC<LoginPageProps> = (props: LoginPageProps) => {
                   <Col lg={{ span: 9, offset: 15 }} md={{ span: 24 }} flex="auto">
                     <div className="login-country-logo">
                       <img
-                        src={countryLogo}
+                        src={process.env.REACT_APP_LOGO || countryLogo}
                         alt="country-logo"
                         onClick={() => {
                           navigate('/');
@@ -124,7 +125,7 @@ const Login: FC<LoginPageProps> = (props: LoginPageProps) => {
                       </div>
 
                       <span className="country-name">
-                        {process.env.COUNTRY_NAME || 'South Korea'}
+                        {process.env.REACT_APP_COUNTRY_NAME || 'South Korea'}
                       </span>
                     </div>
                   </Col>

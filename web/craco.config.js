@@ -1,5 +1,16 @@
 const CracoLessPlugin = require('craco-less');
 const TerserPlugin = require("terser-webpack-plugin");
+const fs = require('fs');
+
+const primaryColor = process.env.REACT_APP_THEME_COLOR || '#41af50';
+const primaryGradient = process.env.REACT_APP_THEME_COLOR_GRADIENT || '#ffffff';
+const imagePng = process.env.REACT_APP_LOGIN_IMAGE_PNG || '../../Assets/Images/login_main.png'
+const imageWeb = process.env.REACT_APP_LOGIN_IMAGE_WEBP || '../../Assets/Images/login_main.webp'
+const scssContent = `$theme-color: ${primaryColor};
+$theme-gradient: ${primaryGradient};
+$png-img: '${imagePng}';
+$webp-img: '${imageWeb}';`;
+fs.writeFileSync('theme.color.scss', scssContent);
 
 module.exports = {
   babel: {
@@ -15,7 +26,7 @@ module.exports = {
         lessLoaderOptions: {
           lessOptions: {
             modifyVars: {
-              '@primary-color': '#41af50',
+              '@primary-color': primaryColor,
               '@layout-sider-menu-container': '#ECE8FD',
               '@component-background': '#FFFFFF',
               '@layout-header-background': '#ECE8FD',

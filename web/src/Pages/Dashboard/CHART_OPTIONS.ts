@@ -206,7 +206,7 @@ export const totalProgrammesOptionsSub: any = {
   fill: {
     opacity: 1,
     colors: [
-      '#41af50',
+      process.env.REACT_APP_THEME_COLOR || '#41af50',
       '#FF8183',
       '#7FEABF',
       '#FFB480',
@@ -253,7 +253,7 @@ export const totalProgrammesOptionsSub: any = {
     offsetY: 5,
     labels: {
       colors: [
-        '#41af50',
+        process.env.REACT_APP_THEME_COLOR || '#41af50',
         '#FF8183',
         '#7FEABF',
         '#FFB480',
@@ -272,7 +272,7 @@ export const totalProgrammesOptionsSub: any = {
       strokeWidth: 0,
       strokeColor: '#fff',
       fillColors: [
-        '#41af50',
+        process.env.REACT_APP_THEME_COLOR || '#41af50',
         '#FF8183',
         '#7FEABF',
         '#FFB480',

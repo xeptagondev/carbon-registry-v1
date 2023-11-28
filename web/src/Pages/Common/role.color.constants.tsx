@@ -11,7 +11,7 @@ export const ViewBGColor = 'rgba(176, 190, 197, 0.23)';
 export const ViewColor = '#707070';
 
 export const GovBGColor = 'rgba(185, 226, 244, 0.56)';
-export const GovColor = '#41af50';
+export const GovColor = process.env.REACT_APP_THEME_COLOR || '#41af50';
 
 export const DevBGColor = 'rgba(254, 241, 173, 0.55)';
 export const DevColor = '#FFA070';

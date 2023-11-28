@@ -114,6 +114,17 @@ services:
         REACT_APP_COUNTRY_FLAG_URL: "https://carbon-common-dev.s3.amazonaws.com/flag.png"
         REACT_APP_COUNTRY_CODE: "NG"
         REACT_APP_MAP_TYPE: "None"
+        REACT_APP_THEME_COLOR: '' #Theme color in Hex #000000
+        REACT_APP_THEME_COLOR_GRADIENT: '' #Theme color in Hex #feb3b3
+        REACT_APP_LOGIN_IMAGE_PNG: '' #PNG Image link or image path related to login.scss
+        REACT_APP_LOGIN_IMAGE_WEBP: '' #PNG Image link or image path related to login.scss
+        REACT_APP_COMPANY: '' # Log in page company name ex:COMPANY
+        REACT_APP_GROUP: '' # Log in page  ex: LTD
+        REACT_APP_SYSTEM_NAME: 'CARBON REGISTRY SYSTEM' # System name in tab and log in page
+        REACT_APP_LOGO:  '' #Company logo
+        REACT_APP_COMPANY_ENITITY: '' # In Logo high weight text
+        REACT_APP_COMPANY_LIMITED: '' # In logo less weighed text
+        REACT_APP_FAV_ICON: 'https://raw.githubusercontent.com/xeptagondev/carbon-registry/develop/web/public/favicon.png'        
     ports:
       - "3030:3030"
     depends_on:

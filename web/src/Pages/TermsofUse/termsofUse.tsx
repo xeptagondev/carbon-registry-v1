@@ -26,7 +26,7 @@ const TermsOfUse = () => {
         <Col md={24} lg={24}>
           <div onClick={() => navigate('/')} className="term-header-container">
             <div className="logo">
-              <img src={sliderLogo} alt="slider-logo" />
+              <img src={process.env.REACT_APP_LOGO || sliderLogo} alt="slider-logo" />
             </div>
             <div>
               <div style={{ display: 'flex' }}>

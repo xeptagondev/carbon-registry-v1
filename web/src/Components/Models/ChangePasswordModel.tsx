@@ -3,7 +3,7 @@ import { Alert, Button, Form, Input, Modal } from 'antd';
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import lockIcon from '../../Assets/Images/lock.svg';
-
+import './models.scss';
 export interface ChangePasswordProps {
   onPasswordChanged: any;
   onFieldsChanged: any;
@@ -23,7 +23,7 @@ const ChangePasswordModel: FC<ChangePasswordProps> = (props: ChangePasswordProps
       title={
         <div className="popup-header">
           <div className="icon">
-            <img alt="icon" src={lockIcon}></img>
+            <img className="lock-icon" alt="icon" src={lockIcon}></img>
           </div>
           <div>{t('passwordReset:changePassword')}</div>
         </div>

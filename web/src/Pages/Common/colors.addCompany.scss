@@ -1,4 +1,6 @@
-$title-main: #41af50;
+@import '../../Styles/variables.scss';
+
+$title-main: $primary-color;
 $title-sub: #555657;
 $common-form-white: #ffffff;
 $steps-title: #3a3541;

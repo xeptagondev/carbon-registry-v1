@@ -4,21 +4,21 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
-    color:#41af50;
+    color:$primary-color;
 
     .ant-select {
         width: 183px;
         text-align: center;      
-        color: #41af50;  
+        color: $primary-color;  
         .ant-select-arrow{
-            color: #41af50;
+            color: $primary-color;
         }
     }
 
     .ant-select-selector {
-        color: #41af50;
+        color: $primary-color;
         text-transform: uppercase;
-        border: 1px solid #41af50 !important;
+        border: 1px solid $primary-color !important;
         border-radius: 4px !important;
     }
 
@@ -26,11 +26,11 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 22px;
-        color:#41af50;
+        color:$primary-color;
     }
 
     .ant-select-selection-item{
-        color: #41af50 !important;
+        color: $primary-color !important;
         font-weight: 500;
     }
 }
@@ -40,7 +40,7 @@
         font-weight: 400;
         font-size: 13px;
         line-height: 22px;
-        color:#41af50;
+        color:$primary-color;
         text-align: center;
     }
     .ant-select-item-option{
@@ -49,10 +49,10 @@
         }
     }
     .ant-select-item-option-selected{
-        color: #41af50 !important;;
+        color: $primary-color !important;;
         line-height: 15.73px;
         .ant-select-item-option-content{
-            color:#41af50;
+            color:$primary-color;
         }
     }
 }

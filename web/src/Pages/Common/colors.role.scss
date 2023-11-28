@@ -1,3 +1,5 @@
+@import '../../Styles/variables.scss';
+
 $admin-bg-color: rgba(255, 166, 166, 0.42);
 $admin-color: #D12800;
 
@@ -11,7 +13,7 @@ $view-bg-color: rgba(176, 190, 197, 0.23);
 $view-color: #707070;
 
 $gov-bg-color: rgba(185, 226, 244, 0.56);
-$gov-color: #41af50;
+$gov-color: $primary-color;
 
 $dev-bg-color:rgba(254, 241, 173, 0.55);
 $dev-color: #FFA070;

@@ -1724,11 +1724,11 @@ ${total}
               }
               icon={
                 userInfoState?.companyRole === CompanyRole.GOVERNMENT ? (
-                  <ClockHistory color="#41af50" size={80} />
+                  <ClockHistory className="ClockHistory" size={80} />
                 ) : userInfoState?.companyRole === CompanyRole.PROGRAMME_DEVELOPER ? (
-                  <BoxArrowInRight color="#41af50" size={80} />
+                  <BoxArrowInRight className="BoxArrowInRight" size={80} />
                 ) : (
-                  <ShieldX color="#41af50" size={80} />
+                  <ShieldX className="ShieldX" size={80} />
                 )
               }
               loading={loadingWithoutTimeRange}
@@ -1760,11 +1760,11 @@ ${total}
               }
               icon={
                 userInfoState?.companyRole === CompanyRole.GOVERNMENT ? (
-                  <BoxArrowRight color="#41af50" size={80} />
+                  <BoxArrowRight className="BoxArrowRight" size={80} />
                 ) : userInfoState?.companyRole === CompanyRole.PROGRAMME_DEVELOPER ? (
-                  <BoxArrowRight color="#41af50" size={80} />
+                  <BoxArrowRight className="BoxArrowRight" size={80} />
                 ) : (
-                  <ShieldCheck color="#41af50" size={80} />
+                  <ShieldCheck className="ShieldCheck" size={80} />
                 )
               }
               loading={loadingWithoutTimeRange}
@@ -1796,11 +1796,11 @@ ${total}
               }
               icon={
                 userInfoState?.companyRole === CompanyRole.GOVERNMENT ? (
-                  <Gem color="#41af50" size={80} />
+                  <Gem className="Gem" size={80} />
                 ) : userInfoState?.companyRole === CompanyRole.PROGRAMME_DEVELOPER ? (
-                  <Gem color="#41af50" size={80} />
+                  <Gem className="Gem" size={80} />
                 ) : (
-                  <ShieldExclamation color="#41af50" size={80} />
+                  <ShieldExclamation className="ShieldExclamation" size={80} />
                 )
               }
               loading={loadingWithoutTimeRange}

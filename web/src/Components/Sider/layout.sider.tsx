@@ -71,15 +71,21 @@ const LayoutSider = (props: LayoutSiderProps) => {
           onClick={() => navigate('/dashboard', { replace: true })}
         >
           <div className="logo">
-            <img src={sliderLogo} alt="slider-logo" />
+            <img src={process.env.REACT_APP_LOGO || sliderLogo} alt="slider-logo" />
           </div>
           {!collapsed && (
             <div>
               <div style={{ display: 'flex' }}>
-                <div className="title">{collapsed ? '' : 'HOLDINGS'}</div>
-                <div className="title-sub">{collapsed ? '' : 'LTD'}</div>
+                <div className="title">
+                  {collapsed ? '' : process.env.REACT_APP_COMPANY_ENITITY || 'HOLDINGS'}
+                </div>
+                <div className="title-sub">
+                  {collapsed ? '' : process.env.REACT_APP_COMPANY_LIMITED || 'LTD'}
+                </div>
               </div>
-              <div className="country-name">{process.env.COUNTRY_NAME || 'South Korea'}</div>
+              <div className="country-name">
+                {process.env.REACT_APP_COUNTRY_NAME || 'South Korea'}
+              </div>
             </div>
           )}
           {collapsed && (
@@ -87,7 +93,7 @@ const LayoutSider = (props: LayoutSiderProps) => {
               <img
                 alt="country flag"
                 src={
-                  process.env.COUNTRY_FLAG_URL ||
+                  process.env.REACT_APP_COUNTRY_FLAG_URL ||
                   'https://carbon-common-dev.s3.amazonaws.com/flag.png'
                 }
               />
